@@ -1,5 +1,5 @@
 {% set name = "youtube-transcript-api" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/youtube_transcript_api-{{ version }}.tar.gz
-  sha256: 69c208c220b2a4b3e4e86366cde321bc1c3cea79e8e8b8bbc1249b703e7b8f73
+  sha256: 262242eef2efe0c24f97cdf8704b08d39f26963e37bcf40f0816a43539fe2280
 
 build:
   number: 0
