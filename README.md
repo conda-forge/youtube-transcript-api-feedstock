@@ -1,11 +1,11 @@
-About youtube-transcript-api
-============================
+About youtube-transcript-api-feedstock
+======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/youtube-transcript-api-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jdepoix/youtube-transcript-api
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/youtube-transcript-api-feedstock/blob/main/LICENSE.txt)
 
 Summary: This is an python API which allows you to get the transcripts/subtitles for a given YouTube video. It also works for automatically generated subtitles, supports translating subtitles and it does not require a headless browser, like other selenium based solutions do!
 
