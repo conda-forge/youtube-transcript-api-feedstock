@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/youtube_transcript_api-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/youtube_transcript_api-{{ version }}.tar.gz
   sha256: cad223d7620633cec44f657646bffc8bbc5598bd8e70b1ad2fa8277dec305eb7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - youtube_transcript_api = youtube_transcript_api.__main__:main
@@ -20,9 +20,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - requests >=2.24.0
 
 test:
@@ -34,6 +34,7 @@ test:
     - youtube_transcript_api --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/jdepoix/youtube-transcript-api
