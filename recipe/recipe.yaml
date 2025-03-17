@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: youtube-transcript-api
-  version: 0.6.2
+  version: 1.0.1
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/youtube_transcript_api-${{ version }}.tar.gz
-  sha256: cad223d7620633cec44f657646bffc8bbc5598bd8e70b1ad2fa8277dec305eb7
+  sha256: 820977c8402e2e7f8ce86817e05044ddc8c5fe7085cb8058b9a21e14153a27ba
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
@@ -28,6 +28,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - requests >=2.24.0
+    - defusedxml
 
 tests:
   - python:
