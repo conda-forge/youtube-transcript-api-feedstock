@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@janjagusch](https://github.com/janjagusch/)
+* [@moritzwilksch](https://github.com/moritzwilksch/)
 
