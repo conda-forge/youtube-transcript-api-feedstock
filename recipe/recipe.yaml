@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: youtube-transcript-api
-  version: "1.0.3"
+  version: "1.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/youtube_transcript_api-${{ version }}.tar.gz
-  sha256: 902baf90e7840a42e1e148335e09fe5575dbff64c81414957aea7038e8a4db46
+  sha256: 786d9e64bd7fffee0dbc1471a61a798cebdc379b9cf8f7661d3664e831fcc1a5
 
 build:
   number: 0
