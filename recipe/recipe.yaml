@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: youtube-transcript-api
-  version: "1.2.3"
+  version: 1.2.4
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/youtube_transcript_api-${{ version }}.tar.gz
-  sha256: 76016b71b410b124892c74df24b07b052702cf3c53afb300d0a2c547c0b71b68
+  sha256: b72d0e96a335df599d67cee51d49e143cff4f45b84bcafc202ff51291603ddcd
 
 build:
   number: 0
@@ -27,9 +27,8 @@ requirements:
     - poetry-core
   run:
     - python >=${{ python_min }}
-    - requests >=2.24.0
-    - defusedxml
-
+    - requests
+    - defusedxml >=0.7.1,<0.8.0
 tests:
   - python:
       imports:
