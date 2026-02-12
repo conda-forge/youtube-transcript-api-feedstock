@@ -13,7 +13,7 @@ source:
   sha256: b72d0e96a335df599d67cee51d49e143cff4f45b84bcafc202ff51291603ddcd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
@@ -37,7 +37,7 @@ tests:
   - requirements:
       run:
         - pip
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
     script:
       - pip check
       - youtube_transcript_api --help
